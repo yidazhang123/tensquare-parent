@@ -1,10 +1,12 @@
 package com.tensquare.common.entity;
 
 import com.tensquare.common.exception.ENUM_RESULT_CODE;
+import lombok.Data;
 
 /**
  * 通用响应结果
  */
+@Data
 public class CommonResult<T> {
 
     private String code;
@@ -48,27 +50,4 @@ public class CommonResult<T> {
         return ENUM_RESULT_CODE.SUCCESS.getCode().equals(code);
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
 }

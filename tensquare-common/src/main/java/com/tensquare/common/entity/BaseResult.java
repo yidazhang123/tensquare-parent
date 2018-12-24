@@ -6,6 +6,7 @@ import lombok.Data;
 /**
  * 基础响应结果
  */
+@Data
 public class BaseResult {
 
     private String code;
@@ -45,35 +46,4 @@ public class BaseResult {
         return new BaseResult(ENUM_RESULT_CODE.FAIL.getCode(),false,ENUM_RESULT_CODE.FAIL.getValue(),content);
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public Boolean getFlag() {
-        return flag;
-    }
-
-    public void setFlag(Boolean flag) {
-        this.flag = flag;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getContent() {
-        return content;
-    }
-
-    public void setContent(Object content) {
-        this.content = content;
-    }
 }
