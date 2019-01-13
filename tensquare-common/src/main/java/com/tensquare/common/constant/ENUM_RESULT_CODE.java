@@ -1,4 +1,4 @@
-package com.tensquare.common.exception;
+package com.tensquare.common.constant;
 
 /**
  * 结果编码

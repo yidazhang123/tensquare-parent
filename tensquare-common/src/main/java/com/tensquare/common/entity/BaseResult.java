@@ -1,6 +1,6 @@
 package com.tensquare.common.entity;
 
-import com.tensquare.common.exception.ENUM_RESULT_CODE;
+import com.tensquare.common.constant.ENUM_RESULT_CODE;
 import lombok.Data;
 
 /**

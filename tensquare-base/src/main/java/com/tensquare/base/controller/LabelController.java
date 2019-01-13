@@ -1,4 +1,4 @@
-package com.tensquare.base.Controller;
+package com.tensquare.base.controller;
 
 import com.tensquare.base.pojo.Label;
 import com.tensquare.base.service.LabelService;
